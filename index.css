@@ -1,0 +1,64 @@
+/* Ustawiamy tło strony na lekką zieleń */
+body {
+background-color: lightgreen;
+}
+
+/* Ustawiamy napis na górze strony kursywą, czcionką Gothic i kolorze czarnym */
+h1 {
+font-family: "Century Gothic", sans-serif;
+font-style: italic;
+color: black;
+}
+
+/* Ustawiamy pasek menu na pomarańczowy i poziomy */
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: orange;
+}
+
+/* Ustawiamy elementy menu na lewo i dodajemy odstępy */
+li {
+float: left;
+margin-right: 20px;
+}
+
+/* Ustawiamy linki w menu na kursywę, czcionką Gothic i różnymi kolorami */
+li a {
+display: block;
+font-family: "Century Gothic", sans-serif;
+font-style: italic;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color: #111;
+}
+
+/* Ustawiamy kolor linku galeria piękna na różowy */
+li a#gallery {
+color: pink;
+}
+
+/* Ustawiamy kolor linku piękno w ujęciu prawnym, moralnym i kulturowym na żółty */
+li a#law {
+color: yellow;
+}
+
+/* Ustawiamy kolor linku piękno wyrzeźbione zdjęciem na niebieski */
+li a#photo {
+color: blue;
+}
+
+/* Ustawiamy tekst pod paskiem menu na biały, kursywę, czcionką Times New Roman i rozmiar 18 */
+p {
+color: white;
+font-family: "Times New Roman", serif;
+font-style: italic;
+font-size: 18px;
+}

@@ -1,0 +1,16 @@
+
+body {
+    font-family: 'Cooper Hewitt', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background: url('instinto-basico-x.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 0;
+}
+```
+
+Wartością `url('instinto-basico-x.jpg')` należy zastąpić ścieżką do pliku "instinto-basico-x.jpg". Upewnij się, że plik znajduje się w tym samym folderze co plik CSS.

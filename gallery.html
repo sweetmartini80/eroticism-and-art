@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Galeria piękna</title>
+<link rel="stylesheet" href="gallery.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Increased gap for better spacing */
+    padding: 20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Set a larger maximum width for thumbnails */
+  }
+
+  p {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+  }
+
+  @media only screen and (min-width: 600px) {
+    /* Adjust styles for screens with a minimum width of 600px */
+    img {
+      max-width: 200px; /* Decrease the maximum width for larger screens */
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    /* Adjust styles for screens with a minimum width of 1200px */
+    img {
+      max-width: 300px; /* Further decrease the maximum width for even larger screens */
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>Galeria piękna</h1>
+  <div class="container">
+    <img src="1000001007.jpg" alt="">
+    <img src="74234.jpg" alt="">
+    <img src="1000001005.jpg" alt="">
+    <img src="1000001000.jpg" alt="">
+    <img src="1000001184.jpg" alt="">
+    <img src="1000001187.jpg" alt="">
+    <img src="1706007746352.jpg" alt="">
+    <img src="1706028826031.jpg" alt="">
+    <img src="1706028826020.jpg" alt="">
+    <img src="1706028826043.jpg" alt="">
+    <img src="1706028826047.jpg" alt="">
+    
+    <!-- New images added -->
+    <img src="af.jpg" alt="">
+    <img src="pa.jpg" alt=""> <!-- Added image "pa" -->
+    <img src="afrodyta-heyl.jpg" alt="">
+    <img src="1000001861.jpg" alt="">
+    <img src="1000001881.jpg" alt="">
+    <img src="1000002023.jpg" alt=""> <!-- Added image -->
+    <img src="IMG_20240125_010233.jpg" alt=""> <!-- Added image -->
+  </div>
+  <p>Piękno stworzone wyobraźnią jest hołdem dla jego twórcy... </p>
+</body>
+</html>

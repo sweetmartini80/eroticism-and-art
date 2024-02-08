@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piękno Wyrzeźbione Zdjęciem</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #FFC0CB, #00FF00);
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        .header {
+            font-size: 22px;
+            color: #FF0000;
+            text-align: center;
+            position: relative;
+            top: 0;
+            animation: slide-up 15s ease-in-out;
+        }
+
+        @keyframes slide-up {
+            from {
+                top: 100%;
+            }
+            to {
+                top: 0;
+            }
+        }
+
+        .header span {
+            display: inline-block;
+            transform: translateY(100%);
+            animation: slide-up-letter 15s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes slide-up-letter {
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .content {
+            font-family: 'sans-serif';
+            font-size: 18px;
+            color: linear-gradient(to right, #FF0000, #00FF00, #FFFF00);
+            text-align: justify;
+            margin: 20px;
+            padding: 20px;
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .image {
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .image:hover {
+            transform: scale(1.1);
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px; /* Optional: Add border-radius for a nicer look */
+        }
+
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px; /* Optional: Add border-radius for a nicer look */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span>P</span> <span>i</span> <span>ę</span> <span>k</span> <span>n</span> <span>o</span> <span> </span> <span>W</span> <span>y</span> <span>r</span> <span>z</span> <span>e</span> <span>ź</span> <span>b</span> <span>i</span> <span>o</span> <span>n</span> <span>e</span> <span> </span> <span>Z</span> <span>d</span> <span>jęciem</span>
+    </div>
+    <div class="content">
+        Zdjęcie powinno być cyfrowym odzwierciedleniem rzeczywistości, otaczającego nas świata, przekazując jednocześnie emocje i wewnętrzny świat wartości i przekonań autora. Fotograf, poszukujący wyrazu, musi zadbać o to, aby interpretacja jego dzieł nie ograniczała się jedynie do tego, co jest przedstawione, ale obejmowała głębszą analizę treści, wzbudzała konstruktywną debatę i ukazywała przedmiotowe zagadnienie w innym świetle.
+
+        Chce on oddzielić dosłowność przedstawionych treści od ich 'duchowego' znaczenia, skupiając się przede wszystkim na drugim, dbając jednocześnie o subtelność i starając się wzbudzić ciekawość potencjalnego widza. Ten element ekspresji nie jest łatwy do osiągnięcia, gdyż często balansuje na granicy dobrego smaku, uwzględniając różnorodność gustów potencjalnych odbiorców. Dla jednych zdjęcia będą ukazywać to, co dosłownie jest na nich przedstawione, dla innych zaś zawsze będą wyrazem piękna w formie cyfrowej.
+    </div>
+    <div class="images">
+        <!-- Additional images with smaller size -->
+        <div class="image" onclick="openImage('1000001145.jpg')">
+            <img src="1000001145.jpg" alt="Image 3">
+        </div>
+        <div class="image" onclick="openImage('1000001382.jpg')
